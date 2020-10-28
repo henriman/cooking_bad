@@ -2,8 +2,12 @@
 # website/gui etc.
 
 class Account:
+    # verlinkung zu social media
     # password: salted hash (hashlib)
-    pass
+    def __init__(self, name, email, password):
+        self.name = name
+        self.email = email
+        self.password = password
 
 class Ingredient:
     # convert etc.
@@ -37,4 +41,3 @@ if __name__ == "__main__":
     il = IngredientList(1, [i])
     r = Recipe(a, il)
     print(r)
-    
